@@ -1,0 +1,12 @@
+[package]
+name = "truslay_contracts"
+edition = "2024.beta"
+# Auditors: package manifest for Truslay Sui Move contracts.
+# Dependencies pinned to Sui framework; review framework revision before mainnet deployment.
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/mainnet" }
+
+[addresses]
+truslay_contracts = "0x0"
+sui = "0x2"
